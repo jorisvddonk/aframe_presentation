@@ -1,3 +1,9 @@
+/*
+Age component
+Will destroy the component after `max` milliseconds
+usage:
+<a-entity age="max: 2000;"></a-entity>
+*/
 AFRAME.registerComponent("age", {
   schema: {
     max: {
