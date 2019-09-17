@@ -4,10 +4,12 @@
     <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
     <script src="script.js"></script>
     <script src="examples/age.js"></script>
+    <script src="examples/controllable.js"></script>
+    <script src="examples/systems/keyboard.js"></script>
   </head>
   <body>
-    <a-scene cursor background="color: #ECECEC">
-      <a-entity position="0 0 -5">
+    <a-scene cursor keyboard background="color: #ECECEC">
+      <a-entity controllable position="0 0 -5">
         <a-sphere position="0 0 0" scale="0.2 0.2 0.2" color="#00f"></a-sphere>
         <a-box position="-1 0 0" color="#c55"></a-box>
         <a-entity
