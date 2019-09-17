@@ -1,4 +1,5 @@
-AFRAME.registerComponent("awesome-component", {
+AFRAME.registerComponent("spin", {
+  schema: {},
   init: function() {
     // initialization function
   },
