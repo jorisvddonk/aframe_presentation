@@ -2,25 +2,20 @@
 <html>
   <head>
     <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    <script src="script.js"></script>
+    <script src="examples/age.js"></script>
   </head>
   <body>
-    <script src="script.js"></script>
-    <script src="age.js"></script>
-    <script src="keyboard.js"></script>
-    <script src="controllable.js"></script>
-
-    <a-scene cursor keyboard background="color: #ECECEC">
-      <a-entity hamster position="0 0 -5">
-        <a-sphere
-          position="0 0 0"
-          scale="0.2 0.2 0.2"
-          color="#00f"
-          click-handler
-        ></a-sphere>
-        <a-box position="-1 0 0" color="#c55" age="max: 2000;"></a-box>
-        <a-box position="1 0 0" color="#5c5"></a-box>
+    <a-scene cursor background="color: #ECECEC">
+      <a-entity position="0 0 -5">
+        <a-sphere position="0 0 0" scale="0.2 0.2 0.2" color="#00f"></a-sphere>
+        <a-box position="-1 0 0" color="#c55"></a-box>
+        <a-entity
+          geometry="primitive: box; width: 1; height: 1; depth: 1"
+          position="1 0 0"
+          material="shader: standard; color: pink; roughness: 0.5; metalness: 0.5;"
+        ></a-entity>
       </a-entity>
-      <a-box position="0 -2 -5" color="#333" controllable></a-box>
     </a-scene>
   </body>
 </html>
