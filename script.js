@@ -1,15 +1,8 @@
-AFRAME.registerComponent("hamster", {
-  schema: {},
-  tick: function(time, timeDelta) {
-    this.el.object3D.rotation.y += Math.PI * 0.001 * timeDelta;
-  }
-});
-
-AFRAME.registerComponent("click-handler", {
-  schema: {},
+AFRAME.registerComponent("awesome-component", {
   init: function() {
-    this.el.addEventListener("click", () => {
-      this.el.setAttribute("color", "#f00");
-    });
+    // initialization function
+  },
+  tick: function(time, timeDelta) {
+    // this runs on every tick
   }
 });
